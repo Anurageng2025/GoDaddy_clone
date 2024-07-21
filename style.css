@@ -1,0 +1,515 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    height: 3.5vw;
+    width: 98%;
+    background-color: #2B2B2B;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px 0px 0px 0px;
+}
+
+nav #menu1 {
+    width: 75%;
+    background-color: 2B2B2B;
+    color: white;
+    
+}
+
+nav #menu1 ul {
+    display: flex ;
+    margin-right: 11vw;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+nav #menu2 {
+    width: 25%;
+    color: white;
+    
+}
+
+nav #menu2 ul {
+    display: flex ;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.nav12 {
+    background-color: white;
+}
+
+.nav2  {
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    /* background-color: white; */
+    justify-content: space-around;
+    /* color: aliceblue; */
+}
+
+.nav2_left {
+    width: 20%;
+}
+
+.nav2_left p {
+    font-size: 18px;
+}
+
+.nav2_center {
+    width:40%;
+}
+
+.nav2_center ul {
+    display: flex ;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+
+.nav2_right {
+    width: 30%;
+    font-size: 20px;
+    text-align: right;
+}
+
+.nav2_right button {
+    width: 25%;
+    height: 85%;
+    margin-right: 15%;
+    border-radius: 5%;
+    font-size: 18px;
+    color: white;
+    background-color: #1876D2;
+    border-color: transparent;
+}
+
+
+.contect {
+    width: 100vw;
+}
+
+.display {
+    width: 100%;
+    height: 68vh;
+    display: flex;
+}
+
+.display .displayborad {
+    width: 55%;
+    height: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.display .displayborad img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.display .displaytext {
+    width: 45%;
+}
+#textheading p {
+    margin-top: -2px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.display p {
+    font-size: 21px;
+    /* font-weight: 500; */
+    line-height: 30px;
+}
+
+#underline p {
+    border-bottom: 2px ;
+    text-decoration: underline dotted 2px gray;
+    cursor: pointer;
+}
+.underline p {
+    border-bottom: 2px ;
+    text-decoration: underline dotted 2px gray;
+    cursor: pointer;
+}
+.display button {
+    background-color: #1876D2;
+    border-color: transparent;
+    color: white;
+    height: 50px;
+    width: 40%;
+    border-radius: 7px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.display button:hover {
+    transform: scale(1.01);
+}
+
+.display button:hover::after {
+    transform: scale(1.01);
+    content: '  →';
+    font-size: 22px;
+}
+.first {
+    position: absolute;
+    height: 40%;
+    width: 30%;
+    top:10vw;
+    left: 22.5vw;
+    background-color: white;
+    display: none;
+}
+
+.underline:hover > .first {
+    display: block;
+
+}
+#small {
+    margin-top: 1.9vw;
+    font-size: 15px;
+}
+
+.rating {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 2vw;
+}
+.rating a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.rating a:hover {
+    text-decoration:underline;
+}
+
+.helpmenu {
+    height: 50px;
+    width: 45%;
+    background-color: #E8EAEB;
+    margin-left: 40px;
+    border-radius:25px ;
+}
+.helpmenu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 5px;
+    margin-left: -5%;
+}
+.helpmenu ul button {
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 14px;
+}
+.helpmenu ul button:hover {
+    background-color: #111;
+    color: white;
+}
+.helpmenu ul button a {
+    text-decoration: none;
+    color: black;
+}
+.helpmenu ul button a:hover{
+    color: #E0E9F6;
+    font-weight: 600;
+}
+.pcontainer {
+    height: 10vw;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.performancemenu {
+    height: 80px;
+    width: 65%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 5px;
+    border-radius:50px ;
+    border: 1px solid gray;
+}
+.performancemenu .standardperformance{
+    color: white;
+    background-color: black;
+    width: 49%;
+    border-radius: 50px;
+    margin-right: 0.5%;
+}
+.performancemenu .standardperformance pre {
+    font-family:sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.performancemenu .highperformance{
+    color: black;
+    /* background-color: black; */
+    width: 49%;
+    border-radius: 50px;
+    margin-left: 0.5%;
+}
+.performancemenu .highperformance pre {
+    font-family:sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.cartcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 720px;
+    /* background-color: aqua; */
+}
+.cartcover{
+    width: 23%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding-top: 40px;
+}
+.cartcard {
+    /* position: relative; */
+    top: 40px;
+    width: 75%;
+    height: 570px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid gray;
+}
+.cartcard h2 {
+    font-size: 29px;
+    font-weight: 500;
+}
+.cartcard #discount {
+    background-color: bisque;
+}
+.cartcard button {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border-color: transparent;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+.cartcard button:hover {
+       transform: scale(1.05);
+}
+.featurecontainer {
+    padding: 20px;
+    display: flex;
+    width: 90%;
+    background-color: #F5F7F8;
+    border-radius: 50px;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+.featurecontainer .feature1 {
+    width: 25%;
+    padding: 20px;
+    overflow:visible;
+}
+.featurecontainer .feature {
+    width: 15%;
+    padding: 20px;
+    overflow:visible;
+}
+.featurecontainer .feature1 #s {
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: aqua;
+    font-weight: 600;
+    text-align: center;
+}
+.heading {
+    width: 100%;
+    height: 10vw;
+    background-color: #F5F7F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+}
+.heading p {
+    font-size: 18px; 
+}
+.heading p a {
+    color: black;
+}
+.aboutcontainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+.aboutcontainer  img{
+    border-radius: 10px;
+}
+.aboutpage1 {
+    width: 35%;
+    padding: 20px;
+}
+.aboutpage2 {
+    width: 35%;
+    padding: 20px;
+}
+.hubwraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hubcontainer {
+    display: flex;
+    padding: 30px;
+    width: 90%;
+    background-color: #F4F8FC;
+    margin-bottom: 2vw;
+}
+.hub1 {
+    width: 50%;
+    padding: 7%;
+}
+.hub2 {
+    width: 50%;
+    padding: 7%;
+}
+.hub1 button {
+    height: 3vw;
+    width: 45%;
+    margin-top: 1vw;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+.hub2 div {
+    padding: 1vw 0vw 1vw 0vw;
+}
+.featurewrap {
+    display: block;
+    padding-left: 0.5vw;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    margin-bottom: 3vw;
+}
+.featurecontainer1 {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.featurecontainer1 img {
+    border-radius: 10px;
+    height: 36vw;
+}
+.featurecontainer2 {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.featurecontainer2 img {
+    border-radius: 10px;
+    height: 30vw;
+}
+.benefitwrap {
+    /* padding: 5vw; */
+    width: 95%;
+    padding-left: 3vw;
+    margin-left: 1.5vw;
+    padding-top: 4vw;
+    padding-bottom: 5vw;
+}
+.benefits {
+    
+    flex-wrap: wrap;
+    width: 90%;
+}
+.benefitflex {
+    width: 90%;
+    
+}
+.poster {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    padding-bottom: 4vw;
+}
+.poster img {
+    width: 100%;
+}
+.poster .help {
+    width: 50%;
+    height: 27vw;
+    background-color: #E0E9F6;
+    padding-top: 50px;
+    padding-left: 48px;
+}
+.poster .help img {
+   width: 14vw;
+}
+.FAQ {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 5vw;
+}
+.FAQ span {
+    position: relative;
+    left: 14.5vw;
+}
+.footer {
+    margin-top: 5vw;
+    width: 94%;
+    height: 35vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111111;
+    padding: 3vw;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky1 {
+    position: fixed;
+    top: 62px;
+    width: 100%;
+    font-weight: 600;
+  }
